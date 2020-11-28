@@ -191,7 +191,7 @@ file(GLOB rime_public_header_files ${PROJECT_SOURCE_DIR}/src/*.h)
 install(FILES ${rime_public_header_files} DESTINATION include)
 
 if(BUILD_DATA)
-  file(GLOB rime_preset_data_files ${PROJECT_SOURCE_DIR}/data/preset/*.yaml)
+  file(GLOB rime_preset_data_files ${PROJECT_SOURCE_DIR}/data/minimal/*.yaml)
   install(FILES ${rime_preset_data_files}
     DESTINATION ${CMAKE_INSTALL_PREFIX}${rime_data_dir})
 endif()
